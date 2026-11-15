@@ -1,0 +1,32 @@
+{
+    "name":"Pearce",
+    "position":null,
+    "doors":[
+        {
+            "direction":"ENTRY",
+            "position":null
+        },
+        {
+            "direction":"EXIT",
+            "position":null
+        }
+    ],
+    "elevators":[
+        {
+            "position":null
+        }
+    ],
+    "ramps":[
+        {"position":null}
+    ],
+    "wheelchairAreas":[
+        {
+            "motorized":true,
+            "position":null
+        },
+        {
+            "motorized":false,
+            "position":{"x":10.0,"y":20.0}
+        }
+    ]
+}

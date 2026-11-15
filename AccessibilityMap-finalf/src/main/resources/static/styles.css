@@ -1,0 +1,125 @@
+* {
+    overflow: hidden;
+}
+
+.body {
+    margin: 0px;
+}
+
+/*Map Background and Images*/
+.mapContainer {
+    background: #FFFFFF;
+    position: absolute;
+    overflow: hidden;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+
+    display:grid;
+    overflow: hidden;
+}
+.map {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+.centralMap {
+    width: 105.4%;
+    height: 133.7%;
+}
+.pearceMap {
+    width: 400px;
+    height: 300px;
+    object-position: 50% 61.6% ;
+}
+.libraryMap {
+    height: 50%;
+    width: auto;
+}
+
+/*Map Pins*/
+.mapPin {
+    position:fixed;
+    width: auto;
+    height: 64px;
+    display: block;
+    margin: 0 auto;
+    object-position: 50% 50%;
+}
+
+/*Button*/
+.backButton {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #A45151;
+    border: 4px solid #000000;
+    z-index: 2px;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    left: 12px;
+    bottom: 12px;
+}
+.backButtonText {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 400;
+    margin:4px;
+}
+
+/*On Hover*/
+.backButton:hover:not(:disabled) {
+    background-color: #e64747;
+    transform: translateY(-1px);
+}
+/*On Click*/
+.backButton:active:not(:disabled) {
+    background-color: #602626;
+    transform: translateY(1px) scale(0.98);
+}
+
+/*Key*/
+.key {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 12px 12px 12px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 32px;
+    background: #FFFFFF;
+    border: 4px solid #000000;
+    right: 12px;
+    bottom: 12px;
+}
+.keyContent {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 0px 0px 0px 0px;
+    justify-content: center;
+    align-items: center;   
+}
+.keyText {
+    margin: 0px;
+    color: #000000;
+    font-family: "Inter";
+    font-weight: 400;
+}
+.keyText.title {
+    align-self: center;
+    font-size: 32px;
+}
+.keyText.body {
+    font-size: 16px;
+}
+.keyIcon {
+  width: auto;
+  height: 32px;
+}
